@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - TechCon 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header, footer {
+            background-color: #004080;
+            color: white;
+            padding: 1em 2em;
+        }
+        header h1 {
+            margin: 0 0 0.5em 0;
+        }
+        nav a {
+            color: white;
+            margin-right: 1.5em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 2em auto;
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        .contact-info a {
+            color: #004080;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .social-links a {
+            margin-right: 1em;
+            font-weight: bold;
+            color: #004080;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        .map-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 5px #aaa;
+        }
+        .map-container iframe {
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 1em;
+            font-weight: bold;
+            margin-bottom: 0.3em;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 0.5em;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        textarea {
+            min-height: 100px;
+        }
+        button[type="submit"] {
+            margin-top: 2em;
+            padding: 0.75em;
+            font-size: 1em;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            max-width: 200px;
+        }
+        button[type="submit"]:hover {
+            background-color: #003060;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Email us at: <a href="mailto:email@example.com">email@example.com</a></p>
+            <p>Follow us on social media:</p>
+            <p class="social-links">
+                <a href="https://twitter.com/TechCon" target="_blank" rel="noopener">Twitter</a>
+                <a href="https://www.facebook.com/TechCon" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://www.linkedin.com/company/techcon" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.instagram.com/techcon" target="_blank" rel="noopener">Instagram</a>
+            </p>
+        </section>
+
+        <section class="map-container" aria-label="TechCon conference venue location">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019868153022!2d-122.41941508468157!3d37.77492977975943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c6c433eb5%3A0xe9a92f54dbbd77de!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                title="Map showing the location of TechCon 2024 venue"
+                >
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Contact Us Form</h2>
+            <form action="#" method="post" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 TechCon Conference. All rights reserved.
+    </footer>
+</body>
+</html>
