@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register for TechCon 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header, footer {
+            background-color: #004080;
+            color: white;
+            padding: 1em 2em;
+        }
+        header h1 {
+            margin: 0 0 0.5em 0;
+        }
+        nav a {
+            color: white;
+            margin-right: 1.5em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 500px;
+            margin: 2em auto;
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 1em;
+            margin-bottom: 0.3em;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 0.5em;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-top: 1em;
+        }
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 0.5em;
+        }
+        button[type="submit"] {
+            margin-top: 2em;
+            padding: 0.75em;
+            font-size: 1em;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button[type="submit"]:hover {
+            background-color: #003060;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Register for TechCon 2025</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post" novalidate>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name" />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Create a password" />
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password" />
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required />
+                <label for="terms">I agree to the <a href="terms.html" target="_blank" rel="noopener">terms and conditions</a></label>
+            </div>
+
+            <button type="submit">Register Now</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2025 TechCon Conference. All rights reserved.
+    </footer>
+</body>
+</html>
